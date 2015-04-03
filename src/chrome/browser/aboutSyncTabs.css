@@ -1,0 +1,108 @@
+#tabs-display,
+#tabsList {
+  background-color: transparent;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+#tabsList {
+  width: 100%;
+}
+
+#tabs-display {
+  -moz-appearance: none;
+  background-image: /* Top highlight */
+                    linear-gradient(rgba(245,245,245,1), rgba(255,255,255,0)),
+                    /* Texture */
+                    url("chrome://mozapps/skin/extensions/background-texture.png"),
+                    /* Gradient */
+                    linear-gradient(#EDF3FC, #CEDEEC);
+  background-size: 100% 60px, auto, auto;
+  background-repeat: no-repeat, repeat, no-repeat;
+}
+
+#headers {
+  background: url(chrome://global/skin/icons/server_data.png) no-repeat;
+  margin-top: 4px;
+  width: 48em;
+  height: 48px;
+  -moz-margin-start: 2em;
+  -moz-margin-end: 2em;
+}
+
+#tabsListHeading {
+  font-size: 140%;
+  font-weight: bold;
+  -moz-margin-start: 56px;
+  color: #003366;
+}
+
+richlistitem {
+  -moz-margin-end: 2em;
+}
+
+richlistitem[selected="true"],
+richlistitem:focus {
+  outline-style: none;
+}
+
+richlistitem[type="tab"] {
+  min-height: 3em;
+  border: #7DA2CE 1px solid;
+  padding: 2px 5px;
+  margin-bottom: 4px;
+  -moz-margin-start: 3em;
+  border-radius: 5px;
+  background: transparent
+              linear-gradient(#FFFFFF, #F6FAFE 51%,
+                                   #F5F9FE 49%, #EDF4FD);
+  width: 44em;
+  box-shadow:
+    inset rgba(255, 255, 255, 0.5) 0 1px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 0px;
+}
+
+richlistitem[type="tab"][selected="true"] {
+  border: #739ACA 1px solid;
+  background: transparent
+              linear-gradient(#EBF4FD, #DFEDFC 51%,
+                                   #DFEDFC 49%, #D5E8FC);
+}
+
+richlistitem[type="client"] {
+  min-height: 2em;
+  color: #000000;
+  -moz-margin-start: 2em;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  width: 42em;
+  border-radius: 5px;
+  background-color: transparent;
+  -moz-user-focus: ignore !important;
+}
+richlistitem.mobile[type="client"] {
+  list-style-image: url("chrome://browser/skin/sync-mobileIcon.png");
+}
+richlistitem.desktop[type="client"] {
+  list-style-image: url("chrome://browser/skin/sync-desktopIcon.png");
+}
+
+.clientName {
+  color: #003366;
+  font-size: 1.1em;
+}
+
+.title {
+  color: #000000;
+  font-size: 1.1em;
+}
+
+.url {
+  color: -moz-nativehyperlinktext;
+  font-size: 0.95em;
+}
+
+.tabIcon {
+  -moz-padding-start: 2px;
+  padding-top: 2px;
+}

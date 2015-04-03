@@ -1,0 +1,151 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.notification-inner {
+  border: 0 !important;
+}
+
+notification,
+notification[type="info"] {
+  border-top: 0px solid;
+  border-bottom: 0px solid;
+  color: #000000;
+  background: #DEEDFA!important;
+  box-shadow: 0 -1px 0 #9FB1C4 inset;
+}
+
+notification[type="critical"] {
+  border-top: 0px solid;
+  border-bottom: 0px solid;
+  color: white;
+  background: #E49292 !important;
+  box-shadow: 0 -1px 0 #D14848 inset;
+}
+
+.messageImage {
+  width: 16px;
+  height: 16px;
+  -moz-margin-start: 6px;
+  -moz-margin-end: 1px;
+}
+
+/* Default icons for notifications */
+
+notification[type="info"] .messageImage,
+.messageImage[type="info"] {
+  list-style-image: url("chrome://global/skin/icons/information-16.png");
+}
+
+notification[type="warning"] .messageImage,
+.messageImage[type="warning"] {
+  list-style-image: url("chrome://global/skin/icons/warning-16.png");
+}
+
+notification[type="critical"] .messageImage,
+.messageImage[type="critical"] {
+  list-style-image: url("chrome://global/skin/icons/error-16.png");
+}
+
+.messageCloseButton {
+  -moz-appearance: none;
+  border: none;
+  padding: 0px;
+  -moz-margin-start: 8px;
+  -moz-margin-end: 5px;
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.messageCloseButton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+.messageCloseButton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+popupnotification .messageCloseButton {
+  margin-top: -2px;
+  -moz-margin-end: -2px;
+}
+
+#notification-popup .messageCloseButton {
+  list-style-image: url("chrome://global/skin/icons/close.png");
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+#notification-popup .messageCloseButton:hover {
+  -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+
+#notification-popup .messageCloseButton:hover:active {
+  -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+
+/* Popup notification */
+
+.popup-notification-description {
+  max-width: 24em;
+}
+
+.popup-notification-button-container {
+  margin-top: 17px;
+}
+
+.popup-notification-menubutton[type="menu-button"] {
+  border: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.popup-notification-menubutton > .button-menubutton-button > .button-box {
+  -moz-padding-start: 8px;
+  -moz-padding-end: 5px;
+}
+
+.popup-notification-menubutton > .button-menubutton-dropmarker {
+  -moz-border-start-style: none !important;
+  padding: 2px 3px 2px;
+  width: auto;
+  height: auto;
+  list-style-image: url("chrome://global/skin/icons/notify_menu.png");
+}
+
+.popup-notification-menubutton > .button-menubutton-button,
+.popup-notification-menubutton > .button-menubutton-dropmarker {
+  border: 1px solid #BBBBBB;
+  margin: 0;
+  box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .05);
+}
+
+.popup-notification-menubutton:hover > .button-menubutton-button,
+.popup-notification-menubutton:hover > .button-menubutton-dropmarker {
+  background: linear-gradient(#FFFFFF, #FDFDFD, #F7F7F7);
+  background-clip: padding-box;
+  border-color: #3699FF;
+  box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .05);
+}
+
+.popup-notification-menubutton > .button-menubutton-button:active:hover,
+.popup-notification-menubutton[open="true"] > .button-menubutton-button,
+.popup-notification-menubutton:hover:active > .button-menubutton-dropmarker,
+.popup-notification-menubutton[open="true"] > .button-menubutton-dropmarker {
+  background: #DDDDDD;
+  border-color: #A3A3A3;
+  box-shadow: 0 1px 1px 0px #CCCCCC inset;
+}
+
+.popup-notification-menubutton:-moz-focusring > .button-menubutton-dropmarker {
+  background: linear-gradient(#FFFFFF, #F8FBFF, #F1F7FF);
+  border-color: #3699FF;
+  box-shadow: 0 0 0 1px rgba(54, 153, 255, .15);
+}
+
+.popup-notification-closebutton {
+  -moz-margin-end: -14px;
+  margin-top: -10px;
+}
+
+.popup-notification-closeitem {
+  list-style-image: url("chrome://global/skin/icons/notify_close.png");
+}

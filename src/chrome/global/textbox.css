@@ -1,0 +1,107 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== textbox.css ==================================================
+  == Styles used by the XUL textbox element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: textbox ::::: */
+
+textbox {
+  -moz-appearance: none;
+  cursor: text;
+  margin: 3px 4px;
+  border: 1px solid #BBBBBB;
+  padding: 1px;
+  -moz-padding-start: 2px;
+  background-color: #FFFFFF;
+  color: -moz-FieldText;
+}
+
+textbox:not([disabled="true"]):hover,
+textbox[focused="true"]:not([readonly="true"]) {
+  border-color: #3599FF;
+}
+
+html|*.textbox-input, 
+html|*.textbox-textarea {
+  margin: 0px !important;
+  border: none !important;
+  padding: 0px !important;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+}
+
+findbar textbox[focused="true"] {
+  outline: none;
+}
+
+.textbox-contextmenu {
+  cursor: default;
+}
+
+/* ..... readonly state ..... */
+
+textbox[readonly="true"] {
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+}
+
+/* ..... disabled state ..... */
+
+textbox[disabled="true"] {
+  cursor: default;
+  color: GrayText;
+  box-shadow: 0 0 0 1px #FFFFFF inset;
+  border: 1px solid #D4D4D4;
+  background-color: #F6F6F6;
+}
+
+/* ::::: plain textbox ::::: */
+
+textbox.plain {
+  -moz-appearance: none !important;
+  background-color: transparent;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: none !important;
+}
+
+/* ::::: search textbox ::::: */
+
+.textbox-search-icon {
+  list-style-image: url(chrome://global/skin/icons/search_box_icon.png);
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.textbox-search-icon:-moz-locale-dir(rtl) {
+  transform: scaleX(-1);
+}
+
+.textbox-search-icon[searchbutton]:not([disabled]) {
+  cursor: pointer;
+}
+
+.textbox-search-clear {
+  list-style-image: url(chrome://global/skin/icons/search_box_clear.png);
+  -moz-image-region: rect(0, 16px, 16px, 0);
+}
+
+.textbox-search-clear:not([disabled]) {
+  cursor: default;
+}
+
+/* ::::: textboxes inside toolbarpaletteitems ::::: */
+
+toolbarpaletteitem > toolbaritem > textbox > .textbox-input-box > html|*.textbox-input {
+  visibility: hidden;
+}

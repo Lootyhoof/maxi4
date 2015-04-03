@@ -1,0 +1,26 @@
+#alert {
+  list-style-image: url("chrome://mozapps/skin/update/update.png"); 
+}
+
+.throbber {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -moz-margin-start: 5px;
+  -moz-margin-end: 2px;
+}
+
+.alertBox {
+  color: InfoText;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 5px;
+  border: 2px solid transparent;
+  background-color: -moz-Dialog;
+  min-height: 50px;
+  border-width: 4px 4px 4px 4px;
+  border-style: solid;
+  border-image: url("chrome://global/skin/icons/tip_bg.png") 4 4 4 4 fill repeat stretch !important;
+}

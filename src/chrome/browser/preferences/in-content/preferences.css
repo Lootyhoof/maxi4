@@ -1,0 +1,202 @@
+/* - This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://global/skin/inContentUI.css");
+
+@namespace html "http://www.w3.org/1999/xhtml";
+
+#preferences-home {
+  display: block;
+}
+
+page[title="Options"] {
+  -moz-appearance: none;
+  padding: 18px;
+  background-image: /* Top highlight */
+                    linear-gradient(rgba(245,245,245,1), rgba(255,255,255,0)),
+                    /* Gradient */
+                    linear-gradient(#F4F4F4, #F4F4F4);
+  background-size: 100% 22px, auto, auto;
+  background-repeat: no-repeat, repeat, no-repeat;
+}
+
+.main-content {
+  border: 0px solid transparent;
+  background: transparent;
+}
+
+#header {
+  margin-bottom: 18px;
+}
+
+.landingButton {
+  -moz-box-align: center;
+  -moz-box-orient: vertical;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.landingButton:hover {
+  cursor: pointer;
+  border: 1px solid rgba(91, 141, 200, .5);
+  background: rgba(242, 248, 255, .5);
+}
+
+.landingButton:hover:active {
+  border: 1px solid #3A5581;
+  background: linear-gradient(#3E78BA, #396EAB, #346196);
+  box-shadow: 0 0 3px 2px #3D70AE inset;
+  color: white;
+}
+
+.landingButton-label {
+  margin-top: 4px;
+}
+
+.landingButton-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("chrome://browser/skin/preferences/Options.png");
+  background-repeat: no-repeat;
+}
+
+.preference-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("chrome://browser/skin/preferences/Options.png");
+  background-repeat: no-repeat;
+  margin: 0 20px;
+}
+
+.preference-icon[type="general"],
+.landingButton-icon[type="general"] {
+  background-position: 0 0;
+}
+
+
+.preference-icon[type="content"],
+.landingButton-icon[type="content"] {
+  background-position: -64px 0;
+}
+
+.preference-icon[type="applications"],
+.landingButton-icon[type="applications"] {
+  background-position: -96px 0;
+}
+
+.preference-icon[type="privacy"],
+.landingButton-icon[type="privacy"] {
+  background-position: -128px 0;
+}
+
+.preference-icon[type="security"],
+.landingButton-icon[type="security"] {
+  background-position: -160px 0;
+}
+
+.preference-icon[type="advanced"],
+.landingButton-icon[type="advanced"] {
+  background-position: -192px 0;
+}
+
+.preference-icon[type="sync"],
+.landingButton-icon[type="sync"] {
+  background-image: url("chrome://browser/skin/preferences/Options-sync.png");
+}
+
+caption {
+  font-size: 20px;
+}
+
+.heading {
+  height: 50px;
+  background-color: rgba(192,199,210,0.7);
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 15px;
+  -moz-box-align: center;
+}
+
+prefpane > .content-box {
+  overflow: auto;
+}
+
+/* Applications Pane Styles */
+
+#applications-content {
+  padding: 15px;
+}
+
+#handlersView {
+  -moz-appearance: none;
+  border: 1px solid rgba(31,64,100,0.4);
+  overflow-y: auto;
+}
+
+/* XXX This style is for bug 740213 and should be removed once that
+   bug has a solution. */
+description > html|a {
+  cursor: pointer;
+}
+
+/* XXX Styles Below can be removed once bug 660726 lands */
+
+.nav-button {
+  list-style-image: url(chrome://mozapps/skin/extensions/navigation.png);
+  -moz-margin-start: 0;
+  -moz-margin-end: 0;
+  padding: 1px 5px;
+  -moz-appearance: none !important;
+  background: transparent !important;
+  border: 0px solid transparent !important;
+  box-shadow: none !important;
+  color: black;
+}
+
+#back-btn,
+#forward-btn:-moz-locale-dir(rtl) {
+  list-style-image: url(chrome://mozapps/skin/extensions/nav_back.png);
+  -moz-image-region: rect(0, 18px, 18px, 0);
+}
+
+#back-btn:hover:not([disabled="true"]),
+#forward-btn:hover:not([disabled="true"]):-moz-locale-dir(rtl) {
+  -moz-image-region: rect(0, 36px, 18px, 18px);
+}
+
+#back-btn:hover:active:not([disabled="true"]),
+#forward-btn:hover:active:not([disabled="true"]):-moz-locale-dir(rtl) {
+  -moz-image-region: rect(0, 54px, 18px, 36px);
+}
+
+#forward-btn,
+#back-btn:-moz-locale-dir(rtl) {
+  list-style-image: url(chrome://mozapps/skin/extensions/nav_forward.png);
+  -moz-image-region: rect(0, 18px, 18px, 0);
+}
+
+#forward-btn:hover:not([disabled="true"]),
+#back-btn:hover:not([disabled="true"]):-moz-locale-dir(rtl) {
+  -moz-image-region: rect(0, 36px, 18px, 18px);
+}
+
+#forward-btn:hover:active:not([disabled="true"]),
+#back-btn:hover:active:not([disabled="true"]):-moz-locale-dir(rtl) {
+  -moz-image-region: rect(0, 54px, 18px, 36px);
+}
+
+#forward-btn[disabled="true"] .button-icon,
+#forward-btn[disabled="true"] .button-icon {
+  opacity: 0.4;
+}
+
+.header-button > .toolbarbutton-text {
+  display: none;
+}

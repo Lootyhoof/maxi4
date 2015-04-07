@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{20c00d0d-79a4-4af5-b98e-98e62085837f}</em:id>
-    <em:version>1.0.0</em:version>
+    <em:version>1.0.1</em:version>
     <em:name>Maxi4</em:name>
     <em:description>Maxthon like theme for Pale Moon. Fork of "mx4" by dkgo</em:description>
     <em:creator>Lootyhoof</em:creator>

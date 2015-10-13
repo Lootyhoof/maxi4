@@ -2,6 +2,6 @@ skin browser      maxi4 chrome/browser/
 skin communicator maxi4 chrome/communicator/ 
 skin mozapps      maxi4 chrome/mozapps/  
 skin global       maxi4 chrome/global/  
-skin appver       maxi4 chrome/appver/25/ appversion<=26.0.0b1
-skin appver       maxi4 chrome/appver/26/ appversion>26.0.0b1
+skin appver       maxi4 chrome/appver/25/ appversion<=26.0.0b2
+skin appver       maxi4 chrome/appver/26/ appversion>26.0.0b2
 

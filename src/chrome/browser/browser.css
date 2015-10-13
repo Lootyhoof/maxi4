@@ -1542,6 +1542,10 @@ sidebarheader {
   }
 }
 
+#main-window[tabsontop="false"] .tabbrowser-tabs {
+  margin-bottom: 1px;
+}
+
 @media not all and (-moz-windows-compositor) {
   #toolbar-menubar:not([autohide=true]):not(:-moz-lwtheme):-moz-system-metric(windows-default-theme),
   #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme):-moz-system-metric(windows-default-theme),

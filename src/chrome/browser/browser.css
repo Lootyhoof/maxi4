@@ -175,6 +175,7 @@ menupopup {
   color: #0C0C0C;
   padding: 0 1.5em .05em !important;
   margin: 0 0 2px !important;
+  text-shadow: none !important;
 }
 
 @media not all and (-moz-windows-compositor) {

@@ -1513,6 +1513,34 @@ sidebarheader {
   margin-bottom: -1px;
 }
 
+#main-window #TabsToolbar toolbarbutton ~ .tabbrowser-tabs {
+  -moz-margin-start: -3px;
+}
+ 
+#main-window[sizemode="normal"] .tabbrowser-tabs {
+  -moz-margin-start: -3px;
+}
+ 
+#main-window[sizemode="maximized"] .tabbrowser-tabs {
+  -moz-margin-start: 0;
+}
+
+#main-window[tabsontop="false"] .tabbrowser-tabs {
+  -moz-margin-start: -4px;
+}
+ 
+@media (-moz-os-version: windows-win10) {
+  #main-window[sizemode="normal"] .tabbrowser-tabs {
+    -moz-margin-start: -4px;
+  }
+}
+ 
+@media not all and (-moz-windows-compositor) {
+  #main-window[sizemode="normal"] .tabbrowser-tabs {
+    -moz-margin-start: -4px;
+  }
+}
+
 @media not all and (-moz-windows-compositor) {
   #toolbar-menubar:not([autohide=true]):not(:-moz-lwtheme):-moz-system-metric(windows-default-theme),
   #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme):-moz-system-metric(windows-default-theme),

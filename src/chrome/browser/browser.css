@@ -16,6 +16,7 @@
 @media not all and (-moz-windows-compositor) {
   #main-window:not(:-moz-lwtheme):after {
     color: black !important;
+	text-shadow: none !important;
   }
 }
 
@@ -3321,59 +3322,68 @@ chatbox {
   @media (-moz-os-version: windows-xp),
          (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7) {
-    #main-window[sizemode=normal] > #titlebar {
-      height: 30px !important;
-    }
-
-    #main-window > #titlebar > #titlebar-content > #appmenu-button-container {
-      margin-top: -1px;
-      padding-bottom: 4px;
-    }
-
-    #main-window[sizemode="normal"] #navigator-toolbox {
-       margin-top: -9px;
-    }
-
-    #main-window[sizemode="maximized"][tabsontop=false] #navigator-toolbox {
-       margin-top: -7px;
-    }
-  
-    #main-window[sizemode="normal"] #toolbar-menubar:not([autohide="true"]) {
-      margin-top: 8px !important;
-      margin-bottom: 0px !important;
-    }
-  
-    #navigator-toolbox[tabsontop="true"] > toolbar:not(:-moz-lwtheme) {
-      background-color: #CCDDEE;
-    }
-
-    #titlebar-content {
-      -moz-appearance: none;
-      margin-top: 1px;
-    }
-    #main-window[tabsontop=false] #titlebar-content:not(:-moz-lwtheme),
     #main-window[sizemode=normal] #titlebar-content:not(:-moz-lwtheme),
     #titlebar-content:not(:-moz-lwtheme) {
-      background-color: #CCDDEE;
-      box-shadow: 0 -1px 0 0 #6D94B6;
+      background-color: #8DC8FB;
+      box-shadow: 0 -1px 0 0 #638CB0;
     }
-
-    window[sizemode="maximized"] #titlebar-content {
-      margin-top: 4px;
-    } 
-
+    #main-window:not(:-moz-lwtheme) {
+      background-color: #8DC8FB;
+    }
+	
+	#main-window[tabsontop=true] #TabsToolbar:not(:-moz-lwtheme) {
+	  background: transparent !important;
+	}
+ 
+    #main-window[sizemode=normal] #titlebar-content {
+      margin-top: 1px;
+      padding-bottom: 5px;
+    }
+ 
+    #main-window[sizemode=normal] #titlebar-buttonbox {
+      margin-top: -1px;
+      padding-bottom: 1px;
+    }
+ 
+    #main-window[tabsintitlebar] #titlebar:-moz-lwtheme {
+      visibility: hidden !important;
+    }
+    #main-window[tabsintitlebar] #titlebar-content:-moz-lwtheme {
+      visibility: visible !important;
+    }
+	
+	#main-window[sizemode=maximized] #titlebar-content {
+      margin-top: 3px !important;
+    }
+    
+	@media (-moz-windows-theme: aero) {
+	  #main-window[sizemode=maximized] #titlebar-content {
+		margin-top: 7px !important;
+	  }
+	}
+	 
+    #toolbar-menubar:not([autohide=true]):not(:-moz-lwtheme),
+    #TabsToolbar:not(:-moz-lwtheme) {
+      -moz-binding: url("chrome://global/content/bindings/toolbar.xml#toolbar-drag");
+      background-color: transparent;
+    }
+    #toolbar-menubar[autohide=true] {
+      background-color: transparent !important;
+    }
+ 
+    #print-preview-toolbar:not(:-moz-lwtheme) {
+      -moz-appearance: -moz-win-browsertabbar-toolbox;
+    }
+ 
     #titlebar-buttonbox {
       -moz-appearance: none !important;
-      margin-top: -1px;
-      -moz-margin-end: -1px;
-      padding-bottom: 10px;
     }
-
-    window[sizemode="maximized"] #titlebar-buttonbox {
-      -moz-appearance: -moz-window-button-box;
-      margin-top: -1px;
-      -moz-margin-end: 0;
-      padding-bottom: 6px;
+ 
+    #titlebar-min:-moz-locale-dir(rtl),
+    #titlebar-max:-moz-locale-dir(rtl),
+    #restore-button:-moz-locale-dir(rtl),
+    #titlebar-close:-moz-locale-dir(rtl) {
+      transform: scaleX(-1);
     }
 
     #titlebar-min,

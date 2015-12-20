@@ -268,7 +268,9 @@ menupopup {
 #appmenu-quit,
 #appmenu_bookmarks,
 #BMB_bookmarkThisPage,
-#appmenu_bookmarkThisPage {
+#appmenu_bookmarkThisPage,
+#sanitizeItem, 
+#HMB_sanitizeItem {
   list-style-image: url("appmenu-icons.png");
 }
 
@@ -303,7 +305,9 @@ menupopup {
   -moz-image-region: rect(0 96px 16px 80px);
 }
 
-#appmenu_sanitizeHistory {
+#appmenu_sanitizeHistory,
+#sanitizeItem, 
+#HMB_sanitizeItem {
   -moz-image-region: rect(0 128px 16px 112px);
 }
 
@@ -311,9 +315,16 @@ menupopup {
   -moz-image-region: rect(0 160px 16px 144px);
 }
 
-#BMB_bookmarkThisPage,
-#appmenu_bookmarkThisPage {
+#appmenu_bookmarkThisPage,
+#menu_bookmarkThisPage,
+#BMB_bookmarkThisPage {
   -moz-image-region: rect(0 176px 16px 160px);
+}
+
+#appmenu_showAllHistory,
+#menu_showAllHistory,
+#HMB_showAllHistory {
+  list-style-image: url("chrome://browser/skin/places/history.png");
 }
 
 #appmenu_savePage,
@@ -2277,6 +2288,7 @@ tab[label="Options"] .tab-icon-image {
 }
 
 #appmenu_unsortedBookmarks,
+#menu_unsortedBookmarks,
 #BMB_unsortedBookmarks {
   list-style-image: url("chrome://browser/skin/places/unsortedBookmarks.png");
   -moz-image-region: auto;

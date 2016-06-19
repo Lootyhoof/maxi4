@@ -51,34 +51,11 @@ notification[type="critical"] .messageImage,
   padding: 0px;
   -moz-margin-start: 8px;
   -moz-margin-end: 5px;
-  list-style-image: url("chrome://global/skin/icons/close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-.messageCloseButton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-.messageCloseButton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 popupnotification .messageCloseButton {
   margin-top: -2px;
   -moz-margin-end: -2px;
-}
-
-#notification-popup .messageCloseButton {
-  list-style-image: url("chrome://global/skin/icons/close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-#notification-popup .messageCloseButton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-#notification-popup .messageCloseButton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 /* Popup notification */
@@ -148,4 +125,5 @@ popupnotification .messageCloseButton {
 
 .popup-notification-closeitem {
   list-style-image: url("chrome://global/skin/icons/notify_close.png");
+  -moz-image-region: auto;
 }

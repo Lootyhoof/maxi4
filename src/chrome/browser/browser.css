@@ -1417,19 +1417,9 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 
 .panel-promo-closebutton {
   -moz-appearance: none;
-  list-style-image: url("chrome://global/skin/icons/close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
   border: none;
   -moz-margin-end: -10px;
   margin-top: -5px;
-}
-
-.panel-promo-closebutton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-.panel-promo-closebutton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 .panel-promo-closebutton > .toolbarbutton-text {
@@ -1747,18 +1737,6 @@ sidebarheader {
   -moz-margin-end: 4px;
   margin-bottom: 0;
   padding: 0px;
-  list-style-image: url(chrome://browser/skin/tabbrowser/tab_close.png);
-  -moz-image-region: rect(0, 18px, 18px, 0);
-}
-
-.tab-close-button:hover,
-.tab-close-button:hover[selected="true"] {
-  -moz-image-region: rect(0, 36px, 18px, 18px);
-}
-
-.tab-close-button:hover:active,
-.tab-close-button:hover:active[selected="true"] {
-  -moz-image-region: rect(0, 54px, 18px, 36px);
 }
 
 .tab-close-button:focus {
@@ -2475,16 +2453,6 @@ tab[label="Options"] .tab-icon-image {
   -moz-appearance: none;
   border: none;
   padding: 0 5px;
-  list-style-image: url("chrome://global/skin/icons/close.png");
-  -moz-image-region: rect(0, 16px, 16px, 0);
-}
-
-#addonbar-closebutton:hover {
-  -moz-image-region: rect(0, 32px, 16px, 16px);
-}
-
-#addonbar-closebutton:hover:active {
-  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 /* Status panel */

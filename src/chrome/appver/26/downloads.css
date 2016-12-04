@@ -1,6 +1,0 @@
-#downloadsPanel[hasdownloads] > #downloadsFooter {
-  background-color: #F2F2F2;
-  box-shadow: 0 1px 0 0 #CBCBCB inset; 
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-}

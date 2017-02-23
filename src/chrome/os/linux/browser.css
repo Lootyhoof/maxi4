@@ -6,3 +6,20 @@
   -moz-appearance: menubar;
   color: -moz-menubartext;
 }
+
+#appmenu-toolbar-button {
+  -moz-appearance: none;
+  border: none;
+  padding: 3px 5px 3px 3px !important;
+  list-style-image: url("chrome://browser/skin/appmenu.png");
+  -moz-image-region: auto;
+}
+
+toolbar[brighttext] #appmenu-toolbar-button {
+  list-style-image: url("chrome://browser/skin/appmenu-inverted.png");
+}
+
+#appmenu-toolbar-button > label,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  display: none !important;
+}

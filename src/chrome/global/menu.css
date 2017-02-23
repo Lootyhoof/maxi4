@@ -23,10 +23,14 @@ menuitem,
   -moz-appearance: none;
   -moz-box-align: center;
   border: 1px solid transparent;
-  color: #000000;
   font: menu;
   list-style-image: none;
   -moz-image-region: auto;
+}
+
+menuitem,
+.splitmenu-menuitem {
+  color: #000000;
 }
 
 menuitem[default="true"] {

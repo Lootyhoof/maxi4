@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.6.0
+- Linux: add more OS-native global styling
+- Linux: make tab bar more system-native
+- Linux: add hamburger appmenu icon
+- allow extensions to style their own toolbarbutton-badges
+- sync devtools styling with default
+
 ### 1.5.0
 - support PM27's devtools
 - drop PM26 support

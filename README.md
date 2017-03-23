@@ -1,7 +1,7 @@
 # Maxi4
 ![Preview](http://i67.tinypic.com/2chn2s.png)
 
-Fork of the theme [mx4] (https://addons.mozilla.org/en-US/firefox/addon/mx4/) by dkgo for Pale Moon.
+Fork of the theme [mx4](https://addons.mozilla.org/firefox/addon/mx4/) by dkgo for Pale Moon.
 
 ## Building
 Simply download the contents of the "src" folder  and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.

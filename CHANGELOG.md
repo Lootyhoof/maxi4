@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.7.0
+- sync about:support styling with default
+- sync about:permissions styling with default
+- add image document favicon when viewing standalone images
+- fix "learn more" links in notification popups
+
 ### 1.6.0
 - Linux: add more OS-native global styling
 - Linux: make tab bar more system-native

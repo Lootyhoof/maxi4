@@ -27,6 +27,7 @@
   --tab-selected-background: #F4F4F4;
   --tab-selected-border: #828282;
   
+  --toolbar-border: rgba(0,0,0,.33);
   --toolbar-box-shadow: 1px 0 0 0 #DFDFDF inset, -1px 0 0 0 #DFDFDF inset;
   --toolbar-highlight-top: rgba(250,250,250,1);
   --toolbar-highlight-bottom: transparent;
@@ -56,6 +57,7 @@
   --tab-border: rgba(126,126,126,0.78);
   --tab-hover-background: rgba(8,8,8,0.8);
   --tab-hover-border: rgba(104,104,104,0.87);
+  --toolbar-border: rgba(255,255,255,.33);
   --toolbar-highlight-top: rgb(11,11,11);
 }
 
@@ -110,7 +112,7 @@
 #main-window[tabsontop=true][disablechrome] #navigator-toolbox::after {
   visibility: visible !important;
   border-top: 1px solid !important;
-  -moz-border-top-colors: rgba(0, 0, 0, .33) !important;
+  -moz-border-top-colors: var(--toolbar-border) !important;
   background-clip: padding-box !important;
   height: 4px !important;
   background: #FFFFFF !important;
@@ -1586,7 +1588,7 @@ sidebarheader {
   position: relative;
 }
 
-.tabbrowser-tab:-moz-lwtheme-brighttext {
+.tabbrowser-tab:-moz-lwtheme {
   color: inherit;
   text-shadow: inherit;
 }
@@ -3174,13 +3176,13 @@ html|*#gcli-output-frame {
   /* Toolbar shadow behind tabs */
   /* This code is only needed for restored windows (i.e. sizemode=normal)
      because of the border radius on the toolbar below the tab bar. */
-#main-window #nav-bar:not(:-moz-lwtheme),
-#main-window > #nav-bar[collapsed=true]:not([customizing]):not(:-moz-lwtheme) + toolbar,
-#main-window > #nav-bar[collapsed=true]:not([customizing]):not(:-moz-lwtheme) + #customToolbars + #PersonalToolbar,
-#navigator-toolbox[tabsontop="true"]:not([customizing]):not(:-moz-lwtheme) > #nav-bar[collapsed="true"] ~ #PersonalToolbar,
-#navigator-toolbox[tabsontop="true"]:not([customizing]):not(:-moz-lwtheme) > #nav-bar[collapsed="true"] + toolbar {
+#main-window #nav-bar,
+#main-window > #nav-bar[collapsed=true]:not([customizing]) + toolbar,
+#main-window > #nav-bar[collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar,
+#navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ #PersonalToolbar,
+#navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + toolbar {
   border-top: 1px solid;
-  -moz-border-top-colors: rgba(0, 0, 0, .33);
+  -moz-border-top-colors: var(--toolbar-border);
   background-clip: padding-box;
 }
 
@@ -3188,7 +3190,7 @@ html|*#gcli-output-frame {
 #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] ~ toolbar[collapsed="true"]  ~ #PersonalToolbar {
   padding-top: 4px!important;
   border-top: 1px solid!important;
-  -moz-border-top-colors: rgba(0, 0, 0, .33)!important;
+  -moz-border-top-colors: var(--toolbar-border)!important;
   background-clip: padding-box!important;
 }
 
@@ -3651,18 +3653,18 @@ html|*#gcli-output-frame {
     #main-window[sizemode=normal] #navigator-toolbox::after,
     #main-window[sizemode=normal] #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar) ,
     #main-window[tabsontop=false] #navigator-toolbox > toolbar {
-      border-left: 1px solid rgba(0, 0, 0, .33);
-      border-right: 1px solid rgba(0, 0, 0, .33);
+      border-left: 1px solid var(--toolbar-border);
+      border-right: 1px solid var(--toolbar-border);
       background-clip: padding-box;
     }
     #main-window[sizemode=normal] #browser-border-start,
     #main-window[sizemode=normal] #browser-border-end {
       display: -moz-box;
-      background-color: rgba(0, 0, 0, .33);
+      background-color: var(--toolbar-border);
       width: 1px;
     }
     #main-window[sizemode=normal] #browser-bottombox {
-      border: 1px solid rgba(0, 0, 0, .33);
+      border: 1px solid var(--toolbar-border);
       border-top-style: none;
     }
   }

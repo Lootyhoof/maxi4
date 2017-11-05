@@ -57,6 +57,22 @@
   -moz-margin-start: .5em;
 }
 
+#appmenuPrimaryPane {
+  -moz-border-end: 1px solid #CBCBCB;
+  padding-right: 1px;
+  box-shadow: 1px 0 0 #FFFFFF;
+  position: relative;
+}
+#appmenuPrimaryPane:-moz-locale-dir(rtl) {
+  box-shadow: -1px 0 0 #FFFFFF;
+}
+
+#appmenuSecondaryPane {
+  -moz-padding-start: 1px;
+  background: #EDEDED;
+  font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
+}
+
 /* ::::: titlebar ::::: */
 
 @media (-moz-windows-compositor) {

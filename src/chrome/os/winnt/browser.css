@@ -6,6 +6,12 @@
   }
 }
 
+@media not all and (-moz-windows-compositor) {
+  #TabsToolbar[tabsontop=true] {
+    margin-bottom: -2px !important;
+  }
+}
+
 /* ::::: app menu button ::::: */
 
 #appmenu-button {

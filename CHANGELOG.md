@@ -1,5 +1,19 @@
 # Changelog
 
+### 2.0.0
+- improve cross-platform styling
+- fix statusbar progressmeter
+- improve detection of when to use dark/light icons
+- add dark persona styling
+- add basic OS X support
+- preserve add-on bar close button in text mode
+- draw a background on Win10 for better accent color detection
+- improve persona styling
+- sync devtools styling with default
+- Linux: improve menubar/tab bar styling
+- Linux: add private browsing indicator
+- major cleanup
+
 ### 1.7.0
 - sync about:support styling with default
 - sync about:permissions styling with default

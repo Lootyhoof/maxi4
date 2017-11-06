@@ -25,6 +25,10 @@ findbar {
   transition-timing-function: ease-in-out, ease-in-out, linear;
 }
 
+findbar:-moz-lwtheme {
+  background: transparent;
+}
+
 findbar[hidden] {
   /* Override display:none to make the transition work. */
   display: -moz-box;

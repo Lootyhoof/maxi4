@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.0.1
+- improve findbar persona styling
+- Linux: improve menubar styling
+
 ### 2.0.0
 - improve cross-platform styling
 - fix statusbar progressmeter

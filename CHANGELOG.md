@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.0.2
+- Linux: fix auto-clicking context menus
+
 ### 2.0.1
 - improve findbar persona styling
 - Linux: improve menubar styling

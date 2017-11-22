@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.0.3
+- restore Maxthon-style context menu styling on Windows + OS X
+
 ### 2.0.2
 - Linux: fix auto-clicking context menus
 

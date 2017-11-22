@@ -27,7 +27,15 @@ panel {
 }
 
 menupopup {
-  -moz-appearance: menupopup;
+  -moz-appearance: none;
+  padding: 0px;
+  min-width: 1px;
+  -moz-window-shadow: none;
+  border-width: 7px 8px 9px 8px;
+  border-style: solid;
+  border-image: url("chrome://global/skin/icons/menu_bg.png") 7 8 9 8 fill repeat stretch;
+  background-color: transparent;
+  color: MenuText;
 }
 
 menupopup > menu > menupopup {
@@ -118,13 +126,18 @@ panel[type="arrow"][side="right"] {
 /* ::::: tooltip ::::: */
 
 tooltip {
-  -moz-appearance: tooltip;
-  margin-top: 21px;
+  -moz-appearance: none;
+  margin-top: 22px;
+  -moz-margin-start: 2px;
   border: 1px solid InfoText;
   padding: 2px 3px;
   max-width: 40em;
-  background-color: InfoBackground;
-  color: InfoText;
+  -moz-window-shadow: none;
+  border-width: 8px 8px 8px 8px;
+  border-style: solid;
+  border-image: url("chrome://global/skin/icons/tooltip_bg.png") 8 8 8 8 fill repeat stretch;
+  background-color: transparent;
+  color: #000000;
   font: message-box;
 }
 
@@ -137,14 +150,27 @@ tooltip[titletip="true"] {
 
 /* rules for popups associated with menulists */
 
-menulist > menupopup {
-  -moz-appearance: none;
-  border-width: 1px;
-  -moz-border-top-colors: -moz-FieldText;
-  -moz-border-right-colors: -moz-FieldText;
-  -moz-border-bottom-colors: -moz-FieldText;
-  -moz-border-left-colors: -moz-FieldText;
+menulist > menupopup,
+.menulist-menupopup {
+  -moz-appearance: none !important;
   padding: 0px;
-  min-width: 0px;
-  background-color: -moz-Field;
+  min-width: 1px;
+  -moz-window-shadow: none;
+  border-width: 7px 8px 9px 8px;
+  border-style: solid;
+  border-image: url("chrome://global/skin/icons/menu_bg.png") 7 8 9 8 fill repeat stretch;
+  background-color: transparent;
+}
+
+.popup-internal-box {
+  margin: -5px -3px !important;
+}
+
+.popup-internal-box .box-inherit.scrollbox-innerbox {
+  margin: 2px 0;
+}
+
+menulist menupopup .popup-internal-box {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }

@@ -33,7 +33,7 @@ menupopup {
   -moz-window-shadow: none;
   border-width: 7px 8px 9px 8px;
   border-style: solid;
-  border-image: url("chrome://global/skin/icons/menu_bg.png") 7 8 9 8 fill repeat stretch;
+  border-image: url("chrome://global/skin/icons/menu_bg.png") 14 16 18 16 fill repeat stretch;
   background-color: transparent;
   color: MenuText;
 }
@@ -135,7 +135,7 @@ tooltip {
   -moz-window-shadow: none;
   border-width: 8px 8px 8px 8px;
   border-style: solid;
-  border-image: url("chrome://global/skin/icons/tooltip_bg.png") 8 8 8 8 fill repeat stretch;
+  border-image: url("chrome://global/skin/icons/tooltip_bg.png") 16 16 16 16 fill repeat stretch;
   background-color: transparent;
   color: #000000;
   font: message-box;
@@ -158,7 +158,7 @@ menulist > menupopup,
   -moz-window-shadow: none;
   border-width: 7px 8px 9px 8px;
   border-style: solid;
-  border-image: url("chrome://global/skin/icons/menu_bg.png") 7 8 9 8 fill repeat stretch;
+  border-image: url("chrome://global/skin/icons/menu_bg.png") 14 16 18 16 fill repeat stretch;
   background-color: transparent;
 }
 

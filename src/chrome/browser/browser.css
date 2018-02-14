@@ -1655,6 +1655,8 @@ toolbar[brighttext] .tabs-newtab-button {
 #TabsToolbar > toolbarpaletteitem > #new-tab-button {
   list-style-image: url(chrome://browser/skin/tabbrowser/tab_new.svg);
   -moz-image-region: rect(0px, 27px, 26px, 8px);
+  margin-top: 1px;
+  padding-bottom: 2px;
 }
 
 #TabsToolbar #alltabs-button {

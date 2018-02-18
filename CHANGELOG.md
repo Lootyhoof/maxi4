@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.0.4
+- fix tab overflow height
+- apply Fitt's Law to new tab button in a maximised window
+- don't force tab width
+- improve media control appearance
+- make context menus and tooltips more HiDPI-friendly
+
 ### 2.0.3
 - restore Maxthon-style context menu styling on Windows + OS X
 

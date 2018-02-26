@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.0.5
+- size menu backgrounds correctly
+
 ### 2.0.4
 - fix tab overflow height
 - apply Fitt's Law to new tab button in a maximised window

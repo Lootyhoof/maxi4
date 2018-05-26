@@ -1898,6 +1898,12 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   height: 32px;
 }
 
+.popup-notification-icon[popupid="addon-theme-change"] {
+  list-style-image: url(chrome://mozapps/skin/extensions/themeGeneric.png);
+  width: 32px;
+  height: 32px;
+}
+
 .popup-notification-icon[popupid="click-to-play-plugins"] {
   list-style-image: url(chrome://mozapps/skin/plugins/pluginBlocked-64.png);
 }

@@ -696,9 +696,13 @@ menupopup {
   #toolbar-menubar:not(:-moz-lwtheme),
   #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme) {
     background-color: transparent !important;
-    color: black;
+    color: var(--window-text-color);
     border-left-style: none !important;
     border-right-style: none !important;
+  }
+  
+  #main-menubar > menu:not(:-moz-lwtheme) {
+    color: inherit;
   }
 
   /* Show toolbar borders on vista through win8, but not on win10 and later: */

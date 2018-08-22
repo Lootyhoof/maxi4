@@ -55,7 +55,7 @@
 #downloadsSummary,
 richlistitem[type="download"] {
   height: 4em;
-  -moz-padding-end: 0;
+  padding-inline-end: 0;
   color: inherit;
 }
 
@@ -99,7 +99,7 @@ richlistitem[type="download"]:last-child {
 }
 
 .downloadTypeIcon {
-  -moz-margin-end: 8px;
+  margin-inline-end: 8px;
   /* Prevent flickering when changing states. */
   height: 32px;
   width: 32px;
@@ -348,7 +348,7 @@ toolbar[brighttext] #downloads-indicator-counter {
   min-height: 0;
   background: #F6F6F6;
   border: 1px solid #BBBBBB;
-  -moz-border-start: none;
+  border-inline-start: none;
 }
 
 #downloads-indicator[paused] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-progress > .progress-bar {

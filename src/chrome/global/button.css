@@ -21,8 +21,8 @@ button {
   border-color: #BBBBBB;
   box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .05);
   color: #333333;
-  -moz-padding-start: 8px;
-  -moz-padding-end: 8px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
 }
 
 button:not([disabled="true"]):hover {
@@ -46,8 +46,8 @@ button[checked="true"] {
   border: 1px solid transparent;
   padding-top: 2px;
   padding-bottom: 3px;
-  -moz-padding-start: 3px;
-  -moz-padding-end: 4px;
+  padding-inline-start: 3px;
+  padding-inline-end: 4px;
 }
 
 .button-text {

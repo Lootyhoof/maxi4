@@ -26,19 +26,19 @@
   margin-top: 4px;
   width: 48em;
   height: 48px;
-  -moz-margin-start: 2em;
-  -moz-margin-end: 2em;
+  margin-inline-start: 2em;
+  margin-inline-end: 2em;
 }
 
 #tabsListHeading {
   font-size: 140%;
   font-weight: bold;
-  -moz-margin-start: 56px;
+  margin-inline-start: 56px;
   color: #003366;
 }
 
 richlistitem {
-  -moz-margin-end: 2em;
+  margin-inline-end: 2em;
 }
 
 richlistitem[selected="true"],
@@ -51,7 +51,7 @@ richlistitem[type="tab"] {
   border: #7DA2CE 1px solid;
   padding: 2px 5px;
   margin-bottom: 4px;
-  -moz-margin-start: 3em;
+  margin-inline-start: 3em;
   border-radius: 5px;
   background: transparent
               linear-gradient(#FFFFFF, #F6FAFE 51%,
@@ -72,7 +72,7 @@ richlistitem[type="tab"][selected="true"] {
 richlistitem[type="client"] {
   min-height: 2em;
   color: #000000;
-  -moz-margin-start: 2em;
+  margin-inline-start: 2em;
   margin-top: 2px;
   margin-bottom: 3px;
   width: 42em;
@@ -103,6 +103,6 @@ richlistitem.desktop[type="client"] {
 }
 
 .tabIcon {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
   padding-top: 2px;
 }

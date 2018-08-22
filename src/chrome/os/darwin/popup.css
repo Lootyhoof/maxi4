@@ -102,7 +102,7 @@ panel[type="arrow"][side="right"] {
 tooltip {
   -moz-appearance: none;
   margin-top: 22px;
-  -moz-margin-start: 2px;
+  margin-inline-start: 2px;
   border: 1px solid InfoText;
   padding: 2px 3px;
   max-width: 40em;

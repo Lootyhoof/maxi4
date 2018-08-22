@@ -64,11 +64,11 @@ menupopup {
   height: auto;
   padding: 0;
   margin: 0;
-  -moz-margin-start: .5em;
+  margin-inline-start: .5em;
 }
 
 #appmenuPrimaryPane {
-  -moz-border-end: 1px solid #CBCBCB;
+  border-inline-end: 1px solid #CBCBCB;
   padding-right: 1px;
   box-shadow: 1px 0 0 #FFFFFF;
   position: relative;
@@ -78,7 +78,7 @@ menupopup {
 }
 
 #appmenuSecondaryPane {
-  -moz-padding-start: 1px;
+  padding-inline-start: 1px;
   background: #EDEDED;
   font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
 }
@@ -122,7 +122,7 @@ menupopup {
 
 @media not all and (-moz-windows-classic) {
   #titlebar-min {
-    -moz-margin-end: 2px;
+    margin-inline-end: 2px;
   }
 }
 
@@ -788,7 +788,7 @@ menupopup {
     content: "";
     display: block;
     margin-top: -15px;
-    -moz-margin-start: -2px;
+    margin-inline-start: -2px;
     padding: 0;
     width: 32px;
     height: 7px;

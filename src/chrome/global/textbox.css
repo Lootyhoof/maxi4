@@ -21,7 +21,7 @@ textbox {
   margin: 3px 4px;
   border: 1px solid #BBBBBB;
   padding: 1px;
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
   background-color: #FFFFFF;
   color: -moz-FieldText;
 }

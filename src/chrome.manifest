@@ -7,4 +7,3 @@ skin os           maxi4 chrome/os/linux/ os=Linux
 skin os           maxi4 chrome/os/darwin/ os=Darwin
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
-override chrome://browser/skin/permissions/aboutPermissions.css chrome://browser/skin/preferences/aboutPermissions.css

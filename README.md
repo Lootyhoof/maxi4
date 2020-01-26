@@ -1,5 +1,5 @@
 # Maxi4
-![Preview](http://i67.tinypic.com/2chn2s.png)
+![Preview](https://i.imgur.com/RJTL8rN.png)
 
 Fork of the theme "mx4" by dkgo for Pale Moon.
 

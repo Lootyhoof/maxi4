@@ -1,9 +1,9 @@
-skin browser      maxi4 chrome/browser/  
-skin communicator maxi4 chrome/communicator/ 
-skin mozapps      maxi4 chrome/mozapps/  
-skin global       maxi4 chrome/global/  
+skin browser      maxi4 chrome/browser/
+skin communicator maxi4 chrome/communicator/
+skin mozapps      maxi4 chrome/mozapps/
+skin global       maxi4 chrome/global/
+skin os           maxi4 chrome/os/linux/
 skin os           maxi4 chrome/os/winnt/ os=WINNT
-skin os           maxi4 chrome/os/linux/ os=Linux
 skin os           maxi4 chrome/os/darwin/ os=Darwin
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css

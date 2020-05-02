@@ -35,6 +35,7 @@
   
   --toolbarbutton-active-background: #BBDCFD;
   --toolbarbutton-active-border: #3298FE;
+  --toolbarbutton-color: #000000;
   --toolbarbutton-hover-background: #E9F4FF;
   --toolbarbutton-hover-border: #3399FF;
   
@@ -121,6 +122,7 @@
   -moz-appearance: none;
   border-style: none;
   background-color: -moz-Dialog;
+  color: var(--toolbarbutton-color);
 }
 
 #PersonalToolbar {

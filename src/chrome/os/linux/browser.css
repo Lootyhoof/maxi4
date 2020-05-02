@@ -4,7 +4,7 @@
 
 #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme) {
   -moz-appearance: menubar;
-  color: -moz-menubartext;
+  color: -moz-menubartext !important;
 }
 
 #appmenu-toolbar-button {

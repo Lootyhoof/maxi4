@@ -23,7 +23,7 @@ textbox {
   padding: 1px;
   padding-inline-start: 2px;
   background-color: #FFFFFF;
-  color: -moz-FieldText;
+  color: #000000;
 }
 
 textbox:not([disabled="true"]):hover,

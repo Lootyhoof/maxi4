@@ -1014,6 +1014,13 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   color: #2151A5;
 }
 
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent {
+  background: url("chrome://browser/skin/notify_v_sep.png") no-repeat right;
+  border-inline-end: 0px solid #acb779;
+  padding-inline-end: 4px;
+  color: #a5a321;
+}
+
 #identity-box:-moz-focusring {
   outline: 1px dotted #000;
   outline-offset: -3px;

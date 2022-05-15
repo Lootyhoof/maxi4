@@ -9,14 +9,13 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{20c00d0d-79a4-4af5-b98e-98e62085837f}</em:id>
-    <em:version>2.7.0</em:version>
+    <em:version>2.8.0</em:version>
     <em:name>Maxi4</em:name>
     <em:description>Maxthon 4 like theme for Pale Moon.</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>maxi4</em:internalName>
     <em:skinnable>true</em:skinnable>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/maxi4/master/update.xml</em:updateURL>
 
     <em:contributor>dkgo</em:contributor>
     <em:contributor>Maxthon</em:contributor>

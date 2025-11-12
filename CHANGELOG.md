@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.9.0
+- support new @media query for Windows 11
+- add inactive caption button fade (Win10/11)
+- support Pale Moon 34
+
 ### 2.8.2
 - support Pale Moon 33
 
